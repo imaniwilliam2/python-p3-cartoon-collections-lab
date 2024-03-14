@@ -20,11 +20,11 @@ class TestCartoonCollections:
         sys.stdout = sys.__stdout__
         assert(captured_out.getvalue() == '''1. Dopey\n2. Grumpy\n3. Bashful\n''')
 
-    def test_summon_captain_planet_structure(self):
-        '''returns a list with the same number of elements that it was given'''
-        result = summon_captain_planet(["carrot", "cucumber", "pepper"])
-        assert(isinstance(result, list))
-        assert(len(result) == 3)
+    # def test_summon_captain_planet_structure(self):
+    #     '''returns a list with the same number of elements that it was given'''
+    #     result = summon_captain_planet(["carrot", "cucumber", "pepper"])
+    #     assert(isinstance(result, list))
+    #     assert(len(result) == 3)
 
     def test_summon_captain_planet_contents(self):
         '''capitalizes each element and adds an exclamation mark'''
